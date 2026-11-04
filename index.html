@@ -309,7 +309,8 @@ body{-webkit-tap-highlight-color:transparent}
 
 <!--
   MODE D'EMPLOI RAPIDE
-  - Remplace [ton-email] partout (liens « mailto: » et dans le script en bas) et [lien-de-la-video] par tes liens de démo.
+  - Adresse de contact : nessisociety@gmail.com (liens « mailto: » et variable MON_EMAIL du script en bas).
+  - Remplace [lien-de-la-video] par tes liens de démo, et [lien-google-play] par la fiche de Ness.
   - Création vendue : remplace <p class="eyebrow">Disponible · Exemplaire unique</p> par
     <p class="eyebrow vendue">Vendue</p>, supprime son bouton « Réserver » et retire-la du menu « Création choisie ».
   - Appli déjà sur le Play Store : ajoute une pastille <li>Déjà sur Google Play</li> dans sa liste « chips »,
@@ -349,7 +350,7 @@ body{-webkit-tap-highlight-color:transparent}
       <a href="#fiche">Fiche de transfert</a>
       <a href="#faq">FAQ</a>
     </nav>
-    <a class="nav-mobile" href="mailto:[ton-email]" aria-label="Poser une question par e-mail"><svg width="22" height="22" aria-hidden="true"><use href="#i-mail"/></svg></a>
+    <a class="nav-mobile" href="mailto:nessisociety@gmail.com" aria-label="Poser une question par e-mail"><svg width="22" height="22" aria-hidden="true"><use href="#i-mail"/></svg></a>
   </div>
 </header>
 
@@ -514,13 +515,13 @@ body{-webkit-tap-highlight-color:transparent}
           <span class="opt-label">Exclusivité</span>
           <span class="opt-price">990&nbsp;€</span>
           <p>Le logiciel et son code source, cédés une seule fois. Tu deviens seul titulaire des droits d'exploitation ; les licences déjà accordées restent valables.</p>
-          <a class="pill pill-fill" href="mailto:[ton-email]?subject=Logiciel%20exclusivite%20-%20me%20prevenir">Être prévenu</a>
+          <a class="pill pill-fill" href="mailto:nessisociety@gmail.com?subject=Logiciel%20exclusivite%20-%20me%20prevenir">Être prévenu</a>
         </div>
         <div class="opt">
           <span class="opt-label">Licence</span>
           <span class="opt-price">39&nbsp;€</span>
           <p>Le droit d'utiliser le logiciel sur ton ordinateur, avec une clé de licence. Sans le code source.</p>
-          <a class="pill pill-line" href="mailto:[ton-email]?subject=Logiciel%20licence%20-%20me%20prevenir">Être prévenu</a>
+          <a class="pill pill-line" href="mailto:nessisociety@gmail.com?subject=Logiciel%20licence%20-%20me%20prevenir">Être prévenu</a>
         </div>
       </div>
       <div class="device-clip laptop-clip" aria-hidden="true"><div class="laptop"><div class="laptop-screen">
@@ -706,7 +707,7 @@ body{-webkit-tap-highlight-color:transparent}
     <p class="lead">Chaque création n'existe qu'en un exemplaire. Une question ? Écris-moi par e-mail ou en message privé sur mes réseaux.</p>
     <div class="pills stack-mobile">
       <a class="pill pill-xl pill-fill" href="#creations">Choisir ma création</a>
-      <a class="pill pill-xl pill-line" href="mailto:[ton-email]">Poser une question</a>
+      <a class="pill pill-xl pill-line" href="mailto:nessisociety@gmail.com">Poser une question</a>
     </div>
   </div>
 </section>
@@ -733,7 +734,7 @@ body{-webkit-tap-highlight-color:transparent}
 
 <script>
 (function () {
-  var MON_EMAIL = "[ton-email]";
+  var MON_EMAIL = "nessisociety@gmail.com";
   var form = document.getElementById("fiche-form");
   var checks = form.querySelectorAll("[data-check]");
   var reqs = form.querySelectorAll("[data-req]");

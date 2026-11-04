@@ -314,8 +314,8 @@ body{-webkit-tap-highlight-color:transparent}
     <p class="eyebrow vendue">Vendue</p>, supprime son bouton « Réserver » et retire-la du menu « Création choisie ».
   - Appli déjà sur le Play Store : ajoute une pastille <li>Déjà sur Google Play</li> dans sa liste « chips »,
     et ajoute 400 € à son prix (sur la tuile, dans data-pick et dans le menu « Création choisie »).
-  - Logiciel : remplace [Nom du logiciel] et ses textes, et [lien-de-paiement-licence] par ton lien de paiement
-    (Payhip, Gumroad ou Lemon Squeezy peuvent générer les clés de licence).
+  - Logiciel : quand il sera prêt, remplace « Bientôt » par son nom et ses textes, et le bouton « Être prévenu »
+    de la licence par ton lien de paiement (Payhip, Gumroad ou Lemon Squeezy peuvent générer les clés de licence).
   - Vraie capture d'écran : dans un <div class="screen" ...>, remplace tout le contenu par
     <img src="capture-equinoxe.png" alt=""> (mets l'image à côté de index.html).
   - Mise en ligne : mets en ligne tout le dossier (index.html, manifest.webmanifest et les icônes)
@@ -327,6 +327,7 @@ body{-webkit-tap-highlight-color:transparent}
   <symbol id="i-form" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4V3h6v1"/><path d="M9 13l2 2 4-4"/></g></symbol>
   <symbol id="i-help" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .8-1 1.5v.7"/></g><circle cx="12" cy="17" r=".6" fill="currentColor"/></symbol>
   <symbol id="i-pc" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8"/><path d="M12 16v4"/></g></symbol>
+  <symbol id="i-muscu" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 7v10"/><path d="M18 7v10"/><path d="M3 9.5v5"/><path d="M21 9.5v5"/><path d="M6 12h12"/></g></symbol>
   <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></g></symbol>
   <symbol id="i-gem" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l3 6-9 12L3 9z"/><path d="M3 9h18"/></g></symbol>
   <symbol id="i-code" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 8l-4 4 4 4"/><path d="M16 8l4 4-4 4"/></g></symbol>
@@ -399,10 +400,10 @@ body{-webkit-tap-highlight-color:transparent}
   <div class="tiles">
     <div class="center tiles-head reveal">
       <h2 id="titre-creations">Les créations. <span>Prêtes à changer de mains.</span></h2>
-      <p>Quatre applis vendues en exemplaire unique, et un logiciel disponible en exclusivité ou en licence. Quand une création est vendue en exclusivité, elle est retirée de la vente.</p>
+      <p>Cinq applis vendues en exemplaire unique, et un logiciel bientôt disponible, en exclusivité ou en licence. Quand une création est vendue en exclusivité, elle est retirée de la vente.</p>
     </div>
 
-    <p class="swipe-hint">Glisse pour découvrir les 5 créations →</p>
+    <p class="swipe-hint">Glisse pour découvrir les 6 créations →</p>
     <div class="track">
     <article class="tile dark reveal" aria-labelledby="t-equinoxe">
       <p class="eyebrow">Disponible · Exemplaire unique</p>
@@ -439,6 +440,25 @@ body{-webkit-tap-highlight-color:transparent}
         <span class="app-icon" style="background:#fff;color:#0F5132"><svg width="44" height="44"><use href="#i-derniere"/></svg></span>
         <span class="screen-name" style="color:#0F3D27">Dernière fois</span>
         <span class="screen-cap" style="color:#2F6B4D">Pièce unique</span>
+      </div></div></div>
+    </article>
+
+    <article class="tile dark reveal" aria-labelledby="t-muscu">
+      <p class="eyebrow">Disponible · Exemplaire unique</p>
+      <h3 id="t-muscu">Carnet Muscu</h3>
+      <p class="tagline">Ton carnet de musculation, toujours dans ta poche.</p>
+      <p class="desc">Séances, exercices, séries et charges notés en quelques secondes, avec tout l'historique à portée de main. 100 % hors ligne.</p>
+      <p class="price"><b>490&nbsp;€</b>prix de cession, clés en main</p>
+      <div class="pills">
+        <a class="pill pill-fill" href="#fiche" data-pick="Carnet Muscu (490 €)" aria-label="Réserver Carnet Muscu">Réserver</a>
+        <a class="pill pill-line" href="[lien-de-la-video]" aria-label="Voir la démo de Carnet Muscu">Voir la démo</a>
+      </div>
+      <ul class="plain chips" aria-label="Inclus"><li>Code source</li><li>Prête pour Google Play</li><li>100 % local, sans serveur</li><li>Guide pas à pas</li></ul>
+      <div class="device-clip" aria-hidden="true"><div class="device"><div class="screen" style="background:#2B1210">
+        <span class="cam"></span>
+        <span class="app-icon" style="background:#FF5A36;color:#FFFFFF"><svg width="44" height="44"><use href="#i-muscu"/></svg></span>
+        <span class="screen-name" style="color:#FFD7CC">Carnet Muscu</span>
+        <span class="screen-cap" style="color:#FFB4A3">Pièce unique</span>
       </div></div></div>
     </article>
 
@@ -485,31 +505,31 @@ body{-webkit-tap-highlight-color:transparent}
     </div>
 
     <article class="tile dark reveal" aria-labelledby="t-logiciel">
-      <p class="eyebrow">Disponible · Logiciel pour ordinateur</p>
-      <h3 id="t-logiciel">[Nom du logiciel]</h3>
-      <p class="tagline">[Ce que fait ton logiciel, en une phrase.]</p>
-      <p class="desc">[Deux ou trois fonctions clés.] Pour [Windows / Mac].</p>
+      <p class="eyebrow">Bientôt · Logiciel pour ordinateur</p>
+      <h3 id="t-logiciel">Bientôt</h3>
+      <p class="tagline">Un nouveau logiciel pour ordinateur arrive.</p>
+      <p class="desc">Il sera proposé en exclusivité, avec son code source, ou en licence d'utilisation. Écris-moi pour être prévenu en premier.</p>
       <div class="opt-grid">
         <div class="opt">
           <span class="opt-label">Exclusivité</span>
           <span class="opt-price">990&nbsp;€</span>
           <p>Le logiciel et son code source, cédés une seule fois. Tu deviens seul titulaire des droits d'exploitation ; les licences déjà accordées restent valables.</p>
-          <a class="pill pill-fill" href="mailto:[ton-email]?subject=Exclusivite%20logiciel">Acheter en exclusivité</a>
+          <a class="pill pill-fill" href="mailto:[ton-email]?subject=Logiciel%20exclusivite%20-%20me%20prevenir">Être prévenu</a>
         </div>
         <div class="opt">
           <span class="opt-label">Licence</span>
           <span class="opt-price">39&nbsp;€</span>
           <p>Le droit d'utiliser le logiciel sur ton ordinateur, avec une clé de licence. Sans le code source.</p>
-          <a class="pill pill-line" href="[lien-de-paiement-licence]">Acheter une licence</a>
+          <a class="pill pill-line" href="mailto:[ton-email]?subject=Logiciel%20licence%20-%20me%20prevenir">Être prévenu</a>
         </div>
       </div>
       <div class="device-clip laptop-clip" aria-hidden="true"><div class="laptop"><div class="laptop-screen">
         <span class="app-icon"><svg width="38" height="38"><use href="#i-pc"/></svg></span>
-        <span class="name">[Nom du logiciel]</span>
+        <span class="name">Bientôt</span>
       </div></div></div>
     </article>
     </div>
-    <div class="dots" aria-hidden="true"><span class="on"></span><span></span><span></span><span></span><span></span></div>
+    <div class="dots" aria-hidden="true"><span class="on"></span><span></span><span></span><span></span><span></span><span></span></div>
 
     <div class="prices reveal">
       <h3>Des prix simples. <span>Sans surprise.</span></h3>
@@ -634,6 +654,7 @@ body{-webkit-tap-highlight-color:transparent}
             <option value="">Choisis une création</option>
             <option value="Équinoxe (490 €)">Équinoxe · 490 €</option>
             <option value="Dernière fois (490 €)">Dernière fois · 490 €</option>
+            <option value="Carnet Muscu (490 €)">Carnet Muscu · 490 €</option>
             <option value="Ness (890 €)">Ness · 890 €</option>
             <option value="Carnet Eurasier (790 €)">Carnet Eurasier · 790 €</option>
           </select>
